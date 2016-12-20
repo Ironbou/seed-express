@@ -7,7 +7,7 @@ app.set('view engine', 'html');
 app.engine('html', require('ejs').renderFile);
 
 app.get('*', function(req, res, next) {
-  res.render('../Dist/riri.html');
+  res.render('../dist/index.html');
 });
 
 app.set('port', 80);
